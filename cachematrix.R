@@ -27,8 +27,8 @@ cacheSolve <- function(x, ...) {
                 }
         raw_matrix <- x$original_matrix  ## to get the special "matrix" from makeCacheMatrix above. 
         inverse_matrix <- solve(raw_matrix) ## to compute the inverse of the special "matrix" returned above.
-        m <- inverse_matrix  ## to cache the inverse matrix. 
-        x$inverse_matrix <- m ##
+        m <- inverse_matrix  
+        x$inverse_matrix <- m ## to cache the inverse matrix.
         m  ## Return a matrix that is the inverse of 'x'.
         }
         
