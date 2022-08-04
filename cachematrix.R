@@ -21,8 +21,8 @@ cacheSolve <- function(x, ...) {
         
         m <- x$inverse_matrix
         
-        if(!is.na(m)){         ## to check if the inverse matrix has already been calculated.
-                massage('getting the inverse matrix')
+        if(is.matrix(m)){         ## to check if the inverse matrix has already been calculated.
+                print('getting the inverse matrix')
                 return(m)
                 }
         raw_matrix <- x$original_matrix  ## to get the special "matrix" from makeCacheMatrix above. 
